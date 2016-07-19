@@ -2,6 +2,8 @@
 
 Neat, extensible and dead simple di system for nodejs.
 
+[![Build Status](https://travis-ci.org/platdesign/neatly.svg?branch=master)](https://travis-ci.org/platdesign/neatly)
+
 # Purpose
 
 Isolate business-logic from server configuration.
