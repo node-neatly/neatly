@@ -36,9 +36,10 @@ app.factory('UserService', ($db) => {
 	}
 });
 
-const services = neatly.bootstrap(app).instances;
-
-services.UserService.getById(1);
+neatly.bootstrap(app)
+	.then((instance) => {
+		instance.services.UserService.getById(1);
+	});
 
 ```
 
