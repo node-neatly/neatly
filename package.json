@@ -1,0 +1,14 @@
+{
+  "name": "neatly",
+  "description": "Neat, extensible and dead simple di system",
+  "author": "Christian Blaschke <mail@platdesign.de>",
+  "version": "0.0.0",
+  "dependencies": {
+    "midge": "^0.1.0"
+  },
+  "repository": "",
+  "devDependencies": {
+    "code": "^3.0.1",
+    "mocha": "^2.5.3"
+  }
+}
