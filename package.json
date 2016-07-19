@@ -2,7 +2,7 @@
   "name": "neatly",
   "description": "Neat, extensible and dead simple di system",
   "author": "Christian Blaschke <mail@platdesign.de>",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "test": "mocha"
   },
@@ -10,7 +10,7 @@
     "midge": "^0.1.0"
   },
   "repository": "git@github.com:platdesign/neatly.git",
-  "homepage":"https://github.com/platdesign/neatly",
+  "homepage": "https://github.com/platdesign/neatly",
   "devDependencies": {
     "code": "^3.0.1",
     "mocha": "^2.5.3"
