@@ -158,6 +158,68 @@ describe('Main', () => {
 
 
 
+
+	describe('$emit', () => {
+
+		it('should not be available as provider in configs', () => {
+
+			let mod = main.module('test');
+
+			mod.config(($emitProvider) => true);
+
+			expect(() => {
+				main.bootstrap(mod);
+			})
+			.to.throw(Error, 'Unknown provider: $emitProvider');
+
+		});
+
+
+		it('should be available as service in run', () => {
+
+			let mod = main.module('test');
+
+			mod.run(($emit) => expect($emit).to.be.a.function());
+
+			return main.bootstrap(mod);
+
+		});
+
+
+		it('should emit events to app.$on(name, handler) handlers', () => {
+
+			let mod = main.module('test');
+
+			mod.run(($emit) => setTimeout(() => $emit('test', 123)));
+
+
+			return main.bootstrap(mod)
+			.then((app) => {
+
+				return new Promise((resolve) => app.$on('test', (data) => {
+					expect(data).to.equal(123);
+					resolve();
+				}));
+
+			})
+
+		});
+
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	describe('config method execution order', () => {
 
 		it('should', () => {
