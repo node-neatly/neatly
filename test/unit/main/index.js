@@ -201,7 +201,7 @@ describe('Main', () => {
 					resolve();
 				}));
 
-			})
+			});
 
 		});
 
@@ -211,7 +211,21 @@ describe('Main', () => {
 
 
 
+	describe('$provide in config (important for testing)', () => {
 
+		it('should replace factory value', () => {
+
+			let mod = main.module('test');
+			mod.factory('test', () => 123);
+
+			mod.config(($provide) => $provide.value('test', 456));
+
+			return main.bootstrap(mod)
+				.then((app) => expect(app.get('test')).to.equal(456));
+
+		});
+
+	});
 
 
 
