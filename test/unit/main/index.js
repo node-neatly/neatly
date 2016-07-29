@@ -228,7 +228,22 @@ describe('Main', () => {
 	});
 
 
+	describe('constants', () => {
 
+		it('should be available in config- and run-handlers under same name', () => {
+
+			let mod = main.module('test');
+
+			mod.constant('abc', 123);
+
+			mod.config((abc) => expect(abc).to.equal(123));
+			mod.run((abc) => expect(abc).to.equal(123));
+
+			return main.bootstrap(mod)
+				.then((app) => expect(app.get('abc')).to.equal(123));
+		});
+
+	});
 
 
 
