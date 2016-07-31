@@ -9,8 +9,8 @@
   "dependencies": {
     "midge": "^0.1.0"
   },
-  "repository": "git@github.com:platdesign/neatly.git",
-  "homepage": "https://github.com/platdesign/neatly",
+  "repository": "git@github.com:node-neatly/neatly.git",
+  "homepage": "https://github.com/node-neatly/neatly",
   "devDependencies": {
     "code": "^3.0.2",
     "mocha": "^2.5.3"
