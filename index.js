@@ -8,5 +8,6 @@ module.exports = {
 	module: function(name, deps) {
 		return new Module(name, deps);
 	},
-	bootstrap: bootstrap
+	bootstrap: (module, configHandler) => bootstrap(module).start(configHandler),
+	init: (module) => bootstrap(module)
 };
