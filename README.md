@@ -2,7 +2,8 @@
 
 Neat, extensible and dead simple di system for nodejs.
 
-[![Build Status](https://travis-ci.org/platdesign/neatly.svg?branch=master)](https://travis-ci.org/platdesign/neatly)
+[![Build Status](https://travis-ci.org/node-neatly/neatly.svg?branch=master)](https://travis-ci.org/node-neatly/neatly)
+
 
 # Purpose
 
