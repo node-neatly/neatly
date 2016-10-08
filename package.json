@@ -12,8 +12,8 @@
   "repository": "git@github.com:node-neatly/neatly.git",
   "homepage": "https://github.com/node-neatly/neatly",
   "devDependencies": {
-    "code": "^3.0.2",
-    "mocha": "^2.5.3"
+    "code": "^4.0.0",
+    "mocha": "^3.1.0"
   },
   "keywords": [
     "di",
