@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "midge": "^0.1.0"
+    "midge": "^0.2.0"
   },
   "repository": "git@github.com:node-neatly/neatly.git",
   "homepage": "https://github.com/node-neatly/neatly",
